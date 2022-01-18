@@ -106,7 +106,7 @@ class Application(tk.Tk):
 
 
     def quit(self, event = None):
-        if self.varSpravny > 1:
+        if self.varSpravny != 0:
             self.procenta = self.varSpravny / self.varCelkem * 100
         else:
             self.procenta = 0   
